@@ -1,0 +1,52 @@
+{% load static cms_tags menu_tags sekizai_tags snippet_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    {% include 'layout/head.html' %}
+
+    {% render_block "css" %}
+
+ </head>
+
+<body class="index-page">
+  {% cms_toolbar %}
+  
+  {% include 'layout/header.html' %}
+
+  <main class="main">
+</main>
+   
+   
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">PhotoFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="line"></div>
+  </div>
+
+  {% include 'layout/js_files.html' %}
+  {% render_block "js" %}
+
+
+</body>
+
+</html>

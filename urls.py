@@ -9,8 +9,9 @@ from . import views
 
 admin.autodiscover()
 
+print('ON EST DANS URL.PY de l APP')
 urlpatterns = [
-        path('booking_discovery_session', views.index, name="booking_discovery_session"),
+        path('wxc', views.index, name="booking_discovery-session"),
 ]
 
 
